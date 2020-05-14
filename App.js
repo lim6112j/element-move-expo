@@ -2,7 +2,7 @@ import React, {useState, useMemo} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import useTouchPos from './useTouchPos';
 export default function App() {
-  const pos = useTouchPos({x: 0, y: 0})
+  const pos = useTouchPos(2,{x: 0, y: 0})
 
   return (
     <View style={[styles.container]}   onStartShouldSetResponder={() => true} onResponderMove={pos.touchMove}>
